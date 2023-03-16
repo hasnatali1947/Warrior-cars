@@ -12,6 +12,9 @@ const MoreSpeakers = document.getElementById('MoreSpeakers');
 const mobileMenu = document.getElementById('mobileMenu');
 const PopupMobileMenu = document.getElementById('PopupMobileMenu');
 const aboutitemMob = document.getElementById('about-item-mob');
+const footerHome = document.getElementById('footerHome');
+const footerAbout = document.getElementById('footerabout');
+
 const X = document.getElementById('X');
 
 const mustSpeaker = [{
@@ -93,10 +96,14 @@ about.addEventListener('click', ((e) => {
   if (desktop.style.display === 'none') {
     desktop.style.display = 'block';
     AboutMain.style.display = 'none';
+    footerHome.style.display = 'flex';
+    footerAbout.style.display = 'none';
     e.target.innerText = 'About';
   } else {
     desktop.style.display = 'none';
     AboutMain.style.display = 'grid';
+    footerHome.style.display = 'none';
+    footerAbout.style.display = 'flex';
     e.target.innerText = 'Home';
   }
 }));
@@ -114,7 +121,6 @@ X.addEventListener('click', (() => {
   mobileMenu.style.display = 'flex';
   PopupMobileMenu.style.display = 'none';
   X.style.display = 'none';
-  console.log(1);
 }));
 
 aboutitemMob.addEventListener('click', ((e) => {
@@ -124,6 +130,8 @@ aboutitemMob.addEventListener('click', ((e) => {
     PopupMobileMenu.style.display = 'none';
     X.style.display = 'block';
     mobileMenu.style.display = 'block';
+    footerHome.style.display = 'flex';
+    footerAbout.style.display = 'none';
     e.target.innerText = 'About';
   } else {
     AboutMain.style.display = 'grid';
@@ -131,6 +139,8 @@ aboutitemMob.addEventListener('click', ((e) => {
     PopupMobileMenu.style.display = 'none';
     e.target.innerText = 'Home';
     X.style.display = 'none';
+    footerHome.style.display = 'none';
+    footerAbout.style.display = 'flex';
     mobileMenu.style.display = 'flex';
   }
 }));

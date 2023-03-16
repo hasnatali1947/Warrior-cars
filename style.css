@@ -138,6 +138,7 @@ header {
   height: 100vh;
   padding: 0 100px;
   background-color: #ededed;
+  width: calc(100% - 200px);
 }
 
 .landing-page div {
@@ -145,7 +146,7 @@ header {
   flex-direction: column;
   justify-content: center;
   height: 100vh;
-  width: 50%;
+  width: 100%;
   background-color: #ededed00;
 }
 
@@ -389,8 +390,7 @@ header {
   color: #ec5242;
   text-align: center;
   font-size: 42px;
-  width: 50%;
-  padding-bottom: 35px;
+  width: 100%;
 }
 
 .about-descripation {
@@ -560,9 +560,10 @@ header {
 }
 
 .footerAbout {
-  display: flex;
+  display: none;
   justify-content: center;
   align-items: center;
+  text-align: center;
   border-top: 1px solid rgba(56, 56, 56, 0.299);
   width: 100%;
   padding: 60px 0;
@@ -603,6 +604,7 @@ header {
   border: 2px solid white;
   margin-top: 20px;
   font-size: 13px;
+  max-width: 400px;
 }
 
 @media screen and (max-width: 769px) {
@@ -680,7 +682,6 @@ header {
 
   .landing-page {
     height: min-content;
-    padding-top: 30px;
     display: flex;
     justify-content: space-between;
     padding-left: 0;
@@ -691,11 +692,12 @@ header {
   .landing-page div {
     padding: 0 50px;
     margin: 0%;
-    width: 90%;
+    width: calc(100% - 100px);
   }
 
   .landing-page div h1 {
     font-size: 35px;
+    width: 100%;
   }
 
   #landing-pageH2 {
