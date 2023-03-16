@@ -1,8 +1,40 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Aclonica&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap");
+
 * {
   font-family: "Lato", sans-serif;
   margin: 0;
   padding: 0;
   scroll-behavior: smooth;
+}
+
+#AboutMain {
+  display: none;
+}
+
+.mainProgramButton {
+  display: none;
+}
+
+.ArrowDownButton {
+  display: none;
+}
+
+#Mobilecross {
+  display: none;
+}
+
+#mobileMenu {
+  display: none;
+}
+
+#PopupMobileMenu {
+  display: none;
+}
+
+.MobilePartners {
+  display: none;
 }
 
 header {
@@ -64,7 +96,6 @@ header {
 }
 
 .headerSecondary nav ul {
-  z-index: 100;
   display: flex;
   align-items: center;
   height: 100%;
@@ -72,6 +103,11 @@ header {
   column-gap: 55px;
   list-style: none;
   margin: 0 60px;
+}
+
+.about-item {
+  cursor: pointer;
+  color: #ec5242;
 }
 
 .menu button {
@@ -89,13 +125,28 @@ header {
   cursor: pointer;
 }
 
+.menu button:hover {
+  transition: 0.3s ease-in-out;
+  background-color: #ec5242;
+  color: white;
+}
+
 .landing-page {
   background-image: url(Icons/landing-bg.png);
   background-size: cover;
   background-position: center;
-  height: min-content;
+  height: 100vh;
   padding: 0 100px;
   background-color: #ededed;
+}
+
+.landing-page div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100vh;
+  width: 50%;
+  background-color: #ededed00;
 }
 
 .landing-page h3 {
@@ -107,25 +158,6 @@ header {
   font-size: 50px;
   font-weight: 900;
   color: #ec5242;
-}
-
-.landing-page div {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  height: 100vh;
-  width: 50%;
-  background-color: #ededed;
-  margin-left: 12vh;
-}
-
-.landing-page div p {
-  width: 85%;
-  background-color: #ededed;
-  padding: 20px;
-  border: 2px solid white;
-  margin-top: 20px;
-  font-size: 13px;
 }
 
 .landing-page h2 {
@@ -143,8 +175,8 @@ header {
   flex-direction: column;
   align-items: center;
   width: 100%;
-  padding-top: 35px;
-  height: 60vh;
+  padding: 35px 0;
+  height: max-content;
   background-image: url(Icons/main-bg.png);
 }
 
@@ -216,7 +248,7 @@ header {
 }
 
 .Featured h3::after {
-  content: '';
+  content: "";
   width: 66px;
   position: absolute;
   border: 2px solid #ec5342d8;
@@ -261,10 +293,6 @@ header {
   padding: 0 12px;
 }
 
-.speaker span p {
-  padding-top: 8px;
-}
-
 .Partners {
   width: 100%;
   display: flex;
@@ -281,7 +309,7 @@ header {
 }
 
 .Partners h2::after {
-  content: '';
+  content: "";
   width: 66px;
   border: 2px solid #ec5342be;
   position: absolute;
@@ -298,7 +326,7 @@ header {
   height: 45px;
 }
 
-footer {
+.footer {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -344,4 +372,751 @@ footer {
   font-size: 13px;
   width: 100%;
   margin-top: 10px;
+}
+
+.about-landing-page {
+  background-image: url(Icons/about-bg.png);
+  background-position: center;
+  background-size: cover;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.heading {
+  color: #ec5242;
+  text-align: center;
+  font-size: 42px;
+  width: 50%;
+  padding-bottom: 35px;
+}
+
+.about-descripation {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid rgba(255, 255, 255, 0.936);
+  background-color: rgba(255, 255, 255, 0.936);
+  margin-bottom: 4vh;
+  width: 53%;
+}
+
+.detail {
+  width: 100%;
+  padding: 20px 40px;
+  background-color: white;
+  text-align: center;
+}
+
+.bottom {
+  text-align: center;
+  width: 100%;
+  margin-top: 15px;
+}
+
+.bottom a {
+  text-decoration: none;
+  color: rgb(30, 30, 30);
+  border-bottom: 2px solid rgb(33, 33, 33);
+  font-weight: 700;
+}
+
+.about-worrior {
+  border-bottom: 2px solid rgb(225, 223, 223);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  padding-bottom: 7vh;
+}
+
+.heading-worrior h3 {
+  margin-top: 7vh;
+  font-size: 25px;
+  font-weight: 600;
+}
+
+.Worrior-text {
+  width: 40%;
+  padding: 10px 20px;
+  text-align: center;
+  margin-top: 3vh;
+  color: rgb(128, 128, 128);
+}
+
+.Worrior-image {
+  border: 2px solid rgb(225, 223, 223);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 28%;
+  height: 50%;
+  margin-top: 20px;
+}
+
+.twoVehicleSection {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+.twoVehicleHeading h3 {
+  margin-top: 7vh;
+  font-size: 25px;
+  font-weight: 600;
+}
+
+.twoVehicleText {
+  margin-top: 3vh;
+  color: rgb(128, 128, 128);
+}
+
+.twoCarsDiv {
+  padding: 45px 45px;
+}
+
+.cars {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 20px;
+}
+
+.car1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  border: 2px solid;
+  color: white;
+  background-image: url(Icons/car1.jpg);
+  height: 200px;
+  width: 400px;
+  background-position: center;
+  background-size: cover;
+}
+
+.car1 h4 {
+  z-index: 1;
+  font-size: 28px;
+  padding-bottom: 10px;
+}
+
+.car1 p {
+  z-index: 1;
+}
+
+.car1::after {
+  content: "";
+  width: 400px;
+  height: 200px;
+  position: absolute;
+  background-color: #e42a1599;
+}
+
+.car1:hover {
+  scale: 0.96;
+  transition: 0.5s ease-in-out;
+  cursor: pointer;
+}
+
+.car2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  color: white;
+  background-image: url(Icons/car2.jpg);
+  height: 200px;
+  width: 400px;
+  background-position: center;
+  background-size: cover;
+}
+
+.car2 h4 {
+  z-index: 1;
+  font-size: 28px;
+  padding-bottom: 10px;
+}
+
+.car2 p {
+  z-index: 1;
+}
+
+.car2::after {
+  content: "";
+  width: 400px;
+  height: 200px;
+  position: absolute;
+  background-color: #e42a159e;
+}
+
+.car2:hover {
+  scale: 0.96;
+  transition: 0.5s ease-in-out;
+  cursor: pointer;
+}
+
+.footerAbout {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-top: 1px solid rgba(56, 56, 56, 0.299);
+  width: 100%;
+  padding: 60px 0;
+  color: white;
+  background-color: rgb(45, 45, 45);
+}
+
+.About-mitMain {
+  display: flex;
+  align-items: center;
+  -moz-column-gap: 2px;
+  column-gap: 2px;
+  line-height: 13px;
+  font-family: "Fredoka One", cursive;
+}
+
+.About-mitMain div span {
+  display: flex;
+  flex-direction: column;
+  font-size: 14px;
+  font-weight: 900;
+  margin-left: 4px;
+}
+
+.About-mitMain img {
+  width: 30px;
+  height: 30px;
+}
+
+.speaker span p {
+  padding-top: 8px;
+}
+
+.landing-page div p {
+  width: 85%;
+  background-color: #ededed;
+  padding: 20px;
+  border: 2px solid white;
+  margin-top: 20px;
+  font-size: 13px;
+}
+
+@media screen and (max-width: 769px) {
+  body {
+    width: 100%;
+  }
+
+  #X {
+    margin-top: -5vh;
+    margin-left: 3vh;
+    height: 4vh;
+    width: 4vh;
+  }
+
+  #Mobilecross {
+    z-index: 600;
+    display: none;
+    opacity: 100;
+  }
+
+  .AboutMain {
+    display: none;
+  }
+
+  .headerDesktop {
+    height: 9vh;
+    position: fixed;
+  }
+
+  .links {
+    display: none;
+  }
+
+  .headerSecondary {
+    position: fixed;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    height: 9vh;
+  }
+
+  #mobileMenu {
+    display: flex;
+  }
+
+  #PopupMobileMenu {
+    display: none;
+    height: 100vh;
+    width: 100%;
+    background-color: #bdbdbdd7;
+    color: white;
+    font-size: 36px;
+    font-weight: 600;
+    position: fixed;
+    padding-top: 8vh;
+    z-index: 100;
+  }
+
+  .PartnersUlLi ul li {
+    margin: 10px;
+  }
+
+  #PopupMobileMenu ul li {
+    display: flex;
+    margin: 5vh;
+    row-gap: 55px;
+    list-style: none;
+    z-index: 500;
+  }
+
+  .headerSecondary img {
+    padding: 20px;
+    height: 18px;
+  }
+
+  .landing-page {
+    height: min-content;
+    padding-top: 30px;
+    display: flex;
+    justify-content: space-between;
+    padding-left: 0;
+    padding-right: 0;
+    width: 100%;
+  }
+
+  .landing-page div {
+    padding: 0 50px;
+    margin: 0%;
+    width: 90%;
+  }
+
+  .landing-page div h1 {
+    font-size: 35px;
+  }
+
+  #landing-pageH2 {
+    font-size: 24px;
+    font-weight: 800;
+  }
+
+  #landing-pageH4 {
+    font-size: 16px;
+  }
+
+  .main-program {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    background-image: url(Icons/main-bg.png);
+    background-size: cover;
+    background-position: center;
+  }
+
+  .main-program h2 {
+    color: white;
+    font-size: 32px;
+    font-weight: 500;
+    position: relative;
+  }
+
+  .main-program h2::after {
+    content: "";
+    width: 60px;
+    height: 2px;
+    position: absolute;
+    top: 7vh;
+    background-color: #ec5242;
+    left: 50%;
+    transform: translateX(-50%);
+    opacity: 0.5;
+  }
+
+  .tabs {
+    width: 90%;
+    flex-wrap: wrap;
+    max-width: max-content;
+    height: max-content;
+    row-gap: 10px;
+  }
+
+  .tab {
+    flex-direction: row;
+    text-align: left;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.08);
+    padding: 10px;
+    -moz-column-gap: 10px;
+    column-gap: 10px;
+    height: 100%;
+    min-height: 60px;
+  }
+
+  .tab h4 {
+    min-width: 80px;
+    margin: 0;
+  }
+
+  .tab p {
+    font-size: 16px;
+  }
+
+  .wholeProgram {
+    display: none;
+  }
+
+  .mainProgramButton {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #ec5242;
+    border: 2px solid #ec5242;
+    height: 52px;
+    padding: 25px 25px;
+    color: white;
+    margin-top: 20px;
+  }
+
+  .Featured {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    position: relative;
+  }
+
+  .Featured h3 {
+    position: relative;
+    font-size: 42px;
+    font-weight: 600;
+  }
+
+  .Featured h3::after {
+    content: "";
+    width: 66px;
+    position: absolute;
+    border: 1px solid #ec5342d8;
+    left: 16vh;
+    top: 8vh;
+  }
+
+  .Speakers {
+    display: grid;
+    grid-template-columns: 1fr;
+    column-gap: 30px;
+  }
+
+  .ArrowDownButton {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 35px;
+    column-gap: 15px;
+    width: 90%;
+    background-color: white;
+    border: 2px solid rgb(228, 225, 225);
+    margin-bottom: 20px;
+  }
+
+  .ArrowDownButton img {
+    height: 8px;
+  }
+
+  .Partners {
+    display: none;
+  }
+
+  .footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0%;
+    height: 15vh;
+  }
+
+  .footerDescripation span {
+    font-size: 16px;
+    font-weight: 700;
+    color: #5d5d5d;
+  }
+
+  .footerDescripation p {
+    display: none;
+  }
+
+  .headerSecondary nav span {
+    display: none;
+  }
+
+  .rotateArrow {
+    transform: rotateZ(180deg);
+  }
+
+  .MoreSpeakers {
+    display: none;
+  }
+
+  .heading {
+    color: #ec5242;
+    text-align: center;
+    font-size: 32px;
+    width: 100%;
+    padding-bottom: 35px;
+    font-weight: 600;
+  }
+
+  .about-worrior {
+    padding: 40px 0;
+    width: 100%;
+    text-align: center;
+  }
+
+  .heading-worrior {
+    text-align: center;
+    width: 85%;
+  }
+
+  .heading-worrior h3 {
+    margin-top: 7vh;
+    font-size: 28px;
+    font-weight: 600;
+  }
+
+  .Worrior-text {
+    font-size: 20px;
+    width: 80%;
+    text-align: center;
+  }
+
+  .Worrior-image {
+    width: 400px;
+  }
+
+  .landing-page div h3 {
+    font-size: 25px;
+  }
+
+  .twoVehicleSection {
+    padding: 10px 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .twoVehicleHeading {
+    width: 90%;
+    text-align: center;
+  }
+
+  .twoVehicleText {
+    width: 90%;
+    text-align: center;
+    padding-bottom: 15px;
+  }
+
+  .twoCarsDiv {
+    padding: 0%;
+  }
+
+  .cars {
+    grid-template-columns: 1fr;
+    row-gap: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .car1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border: 2px solid;
+    color: white;
+    background-image: url(Icons/car1.jpg);
+    height: 200px;
+    width: 350px;
+    max-width: 500px;
+    background-position: center;
+    background-size: cover;
+  }
+
+  .car1 h4 {
+    text-align: center;
+    width: 100%;
+    z-index: 1;
+    font-size: 28px;
+  }
+
+  .car1 p {
+    text-align: center;
+    width: 100%;
+    z-index: 1;
+  }
+
+  .car1::after {
+    content: "";
+    height: 200px;
+    width: 350px;
+    position: absolute;
+    background-color: #e42a1599;
+  }
+
+  .car1:hover {
+    scale: 0.96;
+    transition: 0.5s ease-in-out;
+    cursor: pointer;
+  }
+
+  .car2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: white;
+    background-image: url(Icons/car2.jpg);
+    height: 250px;
+    width: 350px;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+  }
+
+  .car2 h4 {
+    z-index: 1;
+    font-size: 28px;
+  }
+
+  .car2 p {
+    z-index: 1;
+  }
+
+  .car2::after {
+    content: "";
+    width: 350px;
+    height: 250px;
+    position: absolute;
+    background-color: #e42a159e;
+  }
+
+  .car2:hover {
+    scale: 0.96;
+    transition: 0.5s ease-in-out;
+    cursor: pointer;
+  }
+
+  .MobilePartners {
+    position: relative;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.819);
+  }
+
+  .PartnersUlLi ul {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
+    list-style: none;
+  }
+
+  .MobilePartners div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 55px;
+    width: calc(100% - 110px);
+    height: 100%;
+  }
+
+  .MobilePartners h2 {
+    margin-top: 40px;
+    font-size: 32px;
+    color: rgba(255, 255, 255, 0.848);
+  }
+
+  .MobilePartners h2::after {
+    content: "";
+    width: 56px;
+    border: 2px solid #ec5342be;
+    position: absolute;
+    margin-top: 6vh;
+    margin-left: -12.5vh;
+  }
+
+  .MobilePartners img {
+    height: 40px;
+    row-gap: 40px;
+  }
+
+  .footerAbout {
+    background-color: white;
+    padding: 40px 0;
+  }
+
+  .About-mitMain div span {
+    font-size: 20px;
+    color: rgba(0, 0, 0, 0.885);
+  }
+
+  .About-mitMain img {
+    height: 37px;
+    width: 37px;
+  }
+
+  .about-landing-page {
+    padding: 100px 20px;
+    width: calc(100% - 40px);
+    height: max-content;
+  }
+
+  .about-descripation {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid rgba(255, 255, 255, 0.936);
+    background-color: rgba(255, 255, 255, 0.936);
+    margin-bottom: 4vh;
+    width: 80%;
+  }
+
+  .detail {
+    width: 100%;
+    padding: 20px 40px;
+    background-color: white;
+    text-align: center;
+  }
+
+  .bottom {
+    text-align: center;
+    width: 100%;
+    margin-top: 15px;
+  }
+
+  .bottom a {
+    text-decoration: none;
+    color: rgb(30, 30, 30);
+    border-bottom: 2px solid rgb(33, 33, 33);
+    font-weight: 700;
+  }
+
+  .landing-page div p {
+    font-size: 16px;
+    width: 100%;
+    max-width: 450px;
+  }
 }

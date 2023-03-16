@@ -4,26 +4,30 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Worrior' Cars</title>
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <header>
+    <header class="headerDesktop">
       <div class="links">
         <ul>
-          <li><img class="facebook-icon" src="Icons/facebook.png" alt="" /></li>
-          <li><img class="twitter-icon" src="Icons/twitter.png" alt="" /></li>
+          <li> <a href="https://web.facebook.com/?_rdc=1&_rdr"><img class="facebook-icon" src="Icons/facebook.png" alt="" /></a> </li>
+          <li> <a href="https://twitter.com/home"><img class="twitter-icon" src="Icons/twitter.png" alt="" /></a></li>
           <li>English</li>
           <li>MyPage</li>
           <li>Logout</li>
         </ul>
       </div>
       <div class="headerSecondary">
-        <nav>
+          <nav>
+            <div>
+                <img id="mobileMenu" src="Icons/mobile-menu.png" alt="">
+                <img id="Mobilecross" src="Icons/cross.png" alt="">
+            </div>
           <span class="menu">
             <img src="icons/warrior.png" alt="" />
             <ul>
-              <li>About</li>
+              <li id="about-item" class="about-item" >About</li>
               <li>Program</li>
               <li>Join</li>
               <li>Sponsor</li>
@@ -35,27 +39,36 @@
       </div>
     </header>
 
-    <main>
+    <div id="PopupMobileMenu">
+      <ul>
+        <div id="X">X</div>
+        <li id="about-item-mob" class="about-item" >About</li>
+        <li>Program</li>
+        <li>Join</li>
+        <li>Sponsor</li>
+        <li>News</li>
+      </ul>
+    </div>
 
+<main class="desktop-main" id="desktop-main">
+    
+    <section class="landing-page">
         <div>
-            <section class="landing-page">
-        <div>
-          <h3>"The New Release!"</h3>
-          <h1>
-            Announcing Our <br />
-            Jaguare E-3 <br />
-            2023
-          </h1>
-          <p>
-              Worrior has released its latest electric car, the e-type 3.This
-            vehicle boasts a sleek design,improved driving performance, and a
-            longer battery range.
-          </p>
-          <h2>2023.2.7(MON) ~ 12(SAT)</h2>
-          <h4>@ F-9 Park, Panjab Gate, Islamabad</h4>
+            <h3>"The New Release!"</h3>
+            <h1>
+                Announcing Our <br />
+                Jaguare E-3 <br />
+                2023
+            </h1>
+            <p>
+                Worrior has released its latest electric car, the e-type 3.This
+                vehicle boasts a sleek design,improved driving performance, and a
+                longer battery range.
+            </p>
+            <h2 id="landing-pageH2">2023.2.7(MON) ~ 12(SAT)</h2>
+            <h4 id="landing-pageH4">@ F-9 Park, Panjab Gate, Islamabad</h4>
         </div>
     </section>
-</div>
 
     <section class="main-program">
       <h2>Main Program</h2>
@@ -100,6 +113,9 @@
               consequuntur ut,
             </p>
         </article>
+        <div >
+            <button class="mainProgramButton">Join Worrior Global Champions 2023</button>
+        </div>
       </div>
       <span class="wholeProgram"><a href="#">SEE THE WHOLE PROGRAM</a></span>
     </section>
@@ -107,9 +123,10 @@
     <section class="Featured">
       <h3>Feature Speakers</h3>
       <div class="Speakers" id="Speakers"></div>
-      <span class="MoreSpeakers">
+      <span class="MoreSpeakers" id="MoreSpeakers" >
           <div class="Speakers" id="otherSpeakers"></div>
       </span>
+      <button class="ArrowDownButton" id="ArrowDownButton">More <img src="Icons/arrow-down.png" alt=""></button>
     </section>
 
     <section class="Partners">
@@ -123,7 +140,7 @@
         </div>
     </section>
     
-    <footer>
+    <footer class="footer">
         <div class="mitMain">
             <img src="Icons/mit.png" alt="">
             <div>
@@ -136,9 +153,99 @@
             <P class="footer-descripation-disktop footer-descripation-mobile">The MIT License is a permissive free software license originating at the Massachusetts Institute of Technology in the late 1980s.As a permissive license,
             it puts only very limited restriction on reuse and has, therefore, high license compatibility.</P>
         </div>
-
     </footer>
 </main>
+
+<!-- ///////////about///////////// -->
+
+<main class="AboutMain" id="AboutMain">
+    <section class="about-landing-page">
+        <div class="heading">
+            <h1>OUR VEHICLES ARE <br> LOVED FROM 2001</h1>
+        </div>
+        <div class="about-descripation">
+            <p class="detail"> Worrior is a car company that has been creating impressive vehicles since 2001. <br>
+                Each car produced by Warrior is a testament to their commitment to excellence, incorporating the latest advancements in automotive engineering to provide drivers. <br>
+                From sporty coupes to spacious family vehicles, Warrior offers a wide range of cars to suit any lifestyle. <br>
+                With a focus on performance, safety, and comfort, Warrior is a trusted name in the automotive industry and continues to push the boundaries of what's possible in car design.
+            </p>
+        </div>
+        <div class="bottom">
+            <p class="bottom">Please contact us per Email for any furture questions about our new release 2023! <br> <a href="#">wedonthaveanemail@noreply.com</a></p>
+        </div>
+    </section>
+
+    <section class="about-worrior">
+        <div class="heading-worrior">
+            <h3>Warrior Global Champions 2022 Logo</h3>
+        </div>
+        <div class="Worrior-text">
+            <p>The winner logo design in the competion was simple yet elegant creation that perfectly embodied the value and vision. the clean lines and modern typography were
+                eye-catching and memorable, making it an ideal representation of the company.</p>
+        </div>
+        <div class="Worrior-image">
+            <img src="Icons/warrior.png" alt="">
+        </div>
+    </section>
+
+    <section class="twoVehicleSection">
+        <div class="twoVehicleHeading">
+            <h3>See our past year vehicles</h3>
+        </div>
+        <p class="twoVehicleText">Take a look at last two vehicle confrence which took place in karachi and Pirpiai</p>
+        <div class="twoCarsDiv">
+            <div class="cars">
+                <div class="car1">
+                    <h4>2013</h4>
+                    <p>The All time winner of its time</p>
+                </div>
+                <div class="car2">  
+                    <h4>2017</h4>
+                    <p>A masive beauty with elegent looks</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="MobilePartners">
+      <h2>Partners</h2>
+      <div class="PartnersUlLi">
+        <ul>
+          <li>
+            <img src="Icons/google.png" alt="">
+          </li>
+          <li>
+            <img src="Icons/addidas.png" alt="">
+          </li>
+          <li>
+            <img src="Icons/amazon.png" alt="">
+          </li>
+          <li>
+            <img src="Icons/instagram.png" alt="">
+          </li>
+          <li>
+            <img src="Icons/volswagon.png" alt="">
+          </li>
+        </ul>
+      </div>
+  </section>
+
+    <footer class="footerAbout">
+        <div class="About-mitMain">
+            <img src="Icons/mit.png" alt="">
+            <div>
+                <span>MIT</span>
+                <span>Licensed</span>
+            </div>
+        </div>
+        <div class="footerDescripation">
+            <span class="footer-span">2020 MIT License was the most popular software license found</span>
+            <P class="footer-descripation-disktop footer-descripation-mobile">The MIT License is a permissive free software license originating at the Massachusetts Institute of Technology in the late 1980s.As a permissive license,
+            it puts only very limited restriction on reuse and has, therefore, high license compatibility.</P>
+        </div>
+    </footer>
+</main>
+
   </body>
   <script src="index.js"></script>
 </html>

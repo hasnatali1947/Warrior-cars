@@ -20,9 +20,9 @@
   - [❓ FAQ (OPTIONAL)](#faq)
   - [📝 License ](#-license-)
 
-# 📖 Portfolio <a name="about-project"></a>
+# 📖 Car Worrior <a name="about-project"></a>
 
-This is my portfolio Project. In which , all of my details are available.
+This is my Car Worrior Project. In which , all of worrior car details are available.
 
 ## 🛠️ Built With <a name="built-with"></a>
 
@@ -45,7 +45,7 @@ HTML | CSS
 
 ## 🚀 Live Demo <a name="live-demo"></a>
 
-> <a href="https://hasnatali1947.github.io/Portfolio/" >Visit</a>
+> <a href="http://127.0.0.1:5501/index.html" >Visit</a>
 
 <!-- GETTING STARTED -->
 
@@ -71,7 +71,7 @@ And run `npm start` to launch the project.
 
 Clone this repository to your desired folder:
 
-  `git clone https://github.com/hasnatali1947/Portfolio.git`
+  `git clone https://github.com/hasnatali1947/Warrior-cars`
 
 ### Usage
 
