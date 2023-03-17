@@ -69,7 +69,7 @@ HTML | CSS and JavaScript
 
 ## 🚀 Loom Walkthrough <a name="live-demo"></a>
 
-> <a href="https://www.loom.com/share/d9fba7374277402b86dde649a0740bf8">Loom video</a>
+> <a href="https://www.loom.com/share/5e52950bc1e94247b00aa0d079d18604">Loom video</a>
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
