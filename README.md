@@ -67,6 +67,12 @@ HTML | CSS and JavaScript
 
 > <a href="http://127.0.0.1:5501/index.html" >Visit</a>
 
+## 🚀 Loom Walkthrough <a name="live-demo"></a>
+
+> <a href="https://www.loom.com/share/d9fba7374277402b86dde649a0740bf8">Loom video</a>
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
 <!-- GETTING STARTED -->
 
 ## 💻 Getting Started <a name="getting-started"></a>
