@@ -149,7 +149,6 @@ window.addEventListener('resize', ((e) => {
   if (e.target.screen.availWidth > 768) {
     Speakers.style.display = 'grid';
     MoreSpeakers.style.display = 'grid';
-    
   } else {
     Speakers.style.display = 'block';
     MoreSpeakers.style.display = 'none';

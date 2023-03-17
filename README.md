@@ -20,24 +20,44 @@
   - [❓ FAQ (OPTIONAL)](#faq)
   - [📝 License ](#-license-)
 
-# 📖 Car Worrior <a name="about-project"></a>
+# 📖 [First Capston Project] <a name="about-project"></a>
 
-This is my Car Worrior Project. In which , all of worrior car details are available.
+> Castop project is my first near real-work project experience in which I set up a new Github repo, added files and configured code linters before ensuring that the git/github flows worked as expected. Then I proceeded to style the content focusing on a mobile-first approach.
 
 ## 🛠️ Built With <a name="built-with"></a>
 
 ### Tech Stack <a name="tech-stack"></a>
 
-HTML | CSS 
+HTML | CSS and JavaScript
+
+<details>
+  <summary>Client</summary>
+  <ul>
+    <li><a>HTML , CSS and Javascript</a></li>
+  </ul>
+</details>
+
+<details>
+  <summary>Server</summary>
+  <ul>
+    <li><a>Github Pages</a></li>
+  </ul>
+</details>
+
+<details>
+<summary>Database</summary>
+  <ul>
+    <li><a>No Database was used in this project</a></li>
+  </ul>
+</details>
 
 <!-- Features -->
 
 ### Key Features <a name="key-features"></a>
 
-> My Project Links
-> Details of my self
-> Contact avaiable
-> Animation and Transition
+> [Correct set up of GitHub Flows.]
+> [The creation and addition of HTML, CSS and JavaScript files.]
+> [Desktop-first styling based on a Behance template.]
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -55,17 +75,11 @@ To get a local copy up and running, follow these steps.
 
 ### Prerequisites
 
-In order to run this project you need:
-
-A GitHub | A code editor | A web browser
+You don't need any previous installation in order to run this project
 
 ### Install
 
-Install all project dependencies by running the command below
-
-  `$ npm install`
-
-And run `npm start` to launch the project.
+This is not an install able project
 
 ### Setup
 
@@ -79,13 +93,11 @@ To run the project, open index.html with your preferred web browser or open it w
 
 ### Run tests
 
-No tests
+No tests required or added
 
 ### Deployment
 
-You can deploy this project using:
-
-Get a hosting website and give all of the github files
+This is not a deployable project
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -93,17 +105,11 @@ Get a hosting website and give all of the github files
 
 ## 👥 Author <a name="author"></a>
 
-> Mention all of the collaborators of this project.
-
 👤 **Hasnat khan**
 
 - GitHub: [@hasnatali1947](https://github.com/hasnatali1947)
 - Twitter: [@hasnatking1947](https://twitter.com/hasnatking1947)
 - LinkedIn: [Hasnat ali](https://www.linkedin.com/feed/?trk=homepage-basic_google-sign-in-submit)
-
-👤 Aimable BANCUNGUYE
-
--Github: [@githubhandle](https://github.com/BANCUNGUYE66)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -111,8 +117,7 @@ Get a hosting website and give all of the github files
 
 ## 🔭 Future Features <a name="future-features"></a>
 
-> Adding work popups
-> Adding functionality to about section
+> [Enrichment of the project HTML files and its respective content sections]
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -120,7 +125,7 @@ Get a hosting website and give all of the github files
 
 ## 🤝 Contributing <a name="contributing"></a>
 
-Feel free to check [issues page](https://github.com/hasnatali1947/Portfolio/issues).
+All issues are welcomed !! You can contribute by creating an issue.
 
 ## ⭐️ Show your support <a name="support"></a>
 
@@ -132,7 +137,7 @@ If you like this project please leave a ⭐️
 
 ## 🙏 Acknowledgments <a name="acknowledgements"></a>
 
-Thanks Microverse, learn how to code > [Join Microverse](https://www.microverse.org/?grsf=9m3hq6)
+Design by [Cindy Shin](https://www.behance.net/adagio07) the [author of the original design](https://www.behance.net/gallery/29845175/CC-Global-Summit-2015) in Behance
 
 ## 📝 License <a name="license"></a>
 
