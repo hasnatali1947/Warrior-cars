@@ -73,6 +73,12 @@ HTML | CSS and JavaScript
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
+## 🚀 Loom Walkthrough <a name="live-demo"></a>
+
+> <a href="https://www.loom.com/share/5e52950bc1e94247b00aa0d079d18604">Loom video</a>
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
 <!-- GETTING STARTED -->
 
 ## 💻 Getting Started <a name="getting-started"></a>
