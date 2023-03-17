@@ -37,6 +37,10 @@
   display: none;
 }
 
+#X {
+  display: none;
+}
+
 header {
   width: 100%;
   height: 100px;
@@ -150,18 +154,18 @@ header {
   background-color: #ededed00;
 }
 
-.landing-page h3 {
+.landing-page h1 {
   font-size: 35px;
   color: #ec5242;
 }
 
-.landing-page h1 {
+.landing-page h2 {
   font-size: 50px;
   font-weight: 900;
   color: #ec5242;
 }
 
-.landing-page h2 {
+.landing-page h3 {
   font-size: 35px;
   margin-top: 20px;
 }

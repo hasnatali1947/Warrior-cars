@@ -65,7 +65,13 @@ HTML | CSS and JavaScript
 
 ## 🚀 Live Demo <a name="live-demo"></a>
 
-> <a href="http://127.0.0.1:5501/index.html" >Visit</a>
+> <a href="https://hasnatali1947.github.io/Warrior-cars/" >Visit</a>
+
+## 🚀 Loom Walkthrough <a name="live-demo"></a>
+
+> <a href="https://www.loom.com/share/5e52950bc1e94247b00aa0d079d18604">Loom video</a>
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- GETTING STARTED -->
 
