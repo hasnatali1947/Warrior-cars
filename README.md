@@ -137,7 +137,7 @@ If you like this project please leave a ⭐️
 
 ## 🙏 Acknowledgments <a name="acknowledgements"></a>
 
-Thanks Microverse, learn how to code > [Join Microverse](https://www.microverse.org/?grsf=9m3hq6)
+Design by [Cindy Shin](https://www.behance.net/adagio07) the [author of the original design](https://www.behance.net/gallery/29845175/CC-Global-Summit-2015) in Behance
 
 ## 📝 License <a name="license"></a>
 
