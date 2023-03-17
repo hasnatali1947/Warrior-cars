@@ -3,15 +3,18 @@
 /* eslint-disable prefer-destructuring */
 
 const Speakers = document.getElementById('Speakers');
+const MoreSpeakers = document.getElementById('MoreSpeakers');
 const otherSpeaker = document.getElementById('otherSpeakers');
 const about = document.getElementById('about-item');
 const desktop = document.getElementById('desktop-main');
 const AboutMain = document.getElementById('AboutMain');
 const MoreLessBtn = document.getElementById('ArrowDownButton');
-const MoreSpeakers = document.getElementById('MoreSpeakers');
 const mobileMenu = document.getElementById('mobileMenu');
 const PopupMobileMenu = document.getElementById('PopupMobileMenu');
 const aboutitemMob = document.getElementById('about-item-mob');
+const footerHome = document.getElementById('footerHome');
+const footerAbout = document.getElementById('footerabout');
+
 const X = document.getElementById('X');
 
 const mustSpeaker = [{
@@ -93,10 +96,14 @@ about.addEventListener('click', ((e) => {
   if (desktop.style.display === 'none') {
     desktop.style.display = 'block';
     AboutMain.style.display = 'none';
+    footerHome.style.display = 'flex';
+    footerAbout.style.display = 'none';
     e.target.innerText = 'About';
   } else {
     desktop.style.display = 'none';
     AboutMain.style.display = 'grid';
+    footerHome.style.display = 'none';
+    footerAbout.style.display = 'flex';
     e.target.innerText = 'Home';
   }
 }));
@@ -114,7 +121,6 @@ X.addEventListener('click', (() => {
   mobileMenu.style.display = 'flex';
   PopupMobileMenu.style.display = 'none';
   X.style.display = 'none';
-  console.log(1);
 }));
 
 aboutitemMob.addEventListener('click', ((e) => {
@@ -124,6 +130,8 @@ aboutitemMob.addEventListener('click', ((e) => {
     PopupMobileMenu.style.display = 'none';
     X.style.display = 'block';
     mobileMenu.style.display = 'block';
+    footerHome.style.display = 'flex';
+    footerAbout.style.display = 'none';
     e.target.innerText = 'About';
   } else {
     AboutMain.style.display = 'grid';
@@ -131,14 +139,27 @@ aboutitemMob.addEventListener('click', ((e) => {
     PopupMobileMenu.style.display = 'none';
     e.target.innerText = 'Home';
     X.style.display = 'none';
+    footerHome.style.display = 'none';
+    footerAbout.style.display = 'flex';
     mobileMenu.style.display = 'flex';
+  }
+}));
+
+window.addEventListener('resize', ((e) => {
+  if (e.target.screen.availWidth > 768) {
+    Speakers.style.display = 'grid';
+    MoreSpeakers.style.display = 'grid';
+    
+  } else {
+    Speakers.style.display = 'block';
+    MoreSpeakers.style.display = 'none';
   }
 }));
 
 MoreLessBtn.addEventListener('click', ((e) => {
   if (MoreSpeakers.style.display === 'none') {
-    MoreSpeakers.style.display = 'block';
     Speakers.style.display = 'block';
+    MoreSpeakers.style.display = 'block';
     e.target.childNodes[0].data = 'Less';
     e.target.children[0].classList.add('rotateArrow');
   } else {
