@@ -33,19 +33,19 @@ const mustSpeaker = [{
 
 const otherSpeakers = [
   {
-    image: './Icons/TariqMasood.JPG',
-    name: 'Musti Tariq Masood',
+    image: './Icons/TariqMasood.jpg',
+    name: 'Mufti Tariq Masood',
     role: 'Speaker',
     description: 'A speaker presenting some stuff',
   },
   {
-    image: './Icons/raja.JPG',
-    name: 'Musti Tariq Masood',
+    image: './Icons/raja.jpg',
+    name: 'Mufti Raja',
     role: 'Speaker',
     description: 'A speaker presenting some stuff',
   },
   {
-    image: './Icons/khalid-bin-waleed.PNG',
+    image: './Icons/khalid-bin-waleed.png',
     name: 'Khalid Bin Waleed(RA)',
     role: 'Speaker',
     description: 'A speaker presenting some stuff',
