@@ -157,22 +157,41 @@ header {
 .landing-page h1 {
   font-size: 35px;
   color: #ec5242;
+  background-image: url("/Icons/text-bg.webp");
+  background-size: cover;
+  background-clip: inherit;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  width: -moz-fit-content;
+  width: fit-content;
+  animation: textloads 1s ease-in-out;
 }
 
 .landing-page h2 {
+  background-image: url("/Icons/text-bg.webp");
+  background-size: cover;
+  background-clip: inherit;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  width: -moz-fit-content;
+  width: fit-content;
   font-size: 50px;
   font-weight: 900;
   color: #ec5242;
+  animation: textloads 1.2s ease-in-out;
 }
 
 .landing-page h3 {
   font-size: 35px;
   margin-top: 20px;
+  opacity: 0.9;
+  animation: textloads 1.6s ease-in-out;
 }
 
 .landing-page h4 {
   font-size: 20px;
   margin-top: 20px;
+  animation: textloads 1.8s ease-in-out;
 }
 
 .main-program {
@@ -399,6 +418,7 @@ header {
   text-align: center;
   font-size: 42px;
   width: 100%;
+  animation: textloads 1s ease-in-out;
 }
 
 .about-descripation {
@@ -409,6 +429,7 @@ header {
   background-color: rgba(255, 255, 255, 0.936);
   margin-bottom: 4vh;
   width: 53%;
+  animation: textloads 1.2s ease-in-out;
 }
 
 .detail {
@@ -422,6 +443,7 @@ header {
   text-align: center;
   width: 100%;
   margin-top: 15px;
+  animation: textloads 1.4s ease-in-out;
 }
 
 .bottom a {
@@ -613,6 +635,7 @@ header {
   margin-top: 20px;
   font-size: 13px;
   max-width: 400px;
+  animation: textloads 1.4s ease-in-out;
 }
 
 @media screen and (max-width: 769px) {
@@ -681,6 +704,7 @@ header {
     row-gap: 55px;
     list-style: none;
     z-index: 500;
+    animation: textloads 1s ease-in-out;
   }
 
   .headerSecondary img {
@@ -1128,5 +1152,17 @@ header {
     font-size: 16px;
     width: 100%;
     max-width: 450px;
+  }
+}
+
+@keyframes textloads {
+  0% {
+    transform: translateY(30px);
+    opacity: 0;
+  }
+
+  100% {
+    transform: translateY(0);
+    opacity: 1;
   }
 }
