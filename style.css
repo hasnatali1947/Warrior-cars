@@ -157,7 +157,7 @@ header {
 .landing-page h1 {
   font-size: 35px;
   color: #ec5242;
-  background-image: url("/Icons/text-bg.webp");
+  background-image: url("./Icons/text-bg.webp");
   background-size: cover;
   background-clip: inherit;
   -webkit-background-clip: text;
@@ -168,7 +168,7 @@ header {
 }
 
 .landing-page h2 {
-  background-image: url("/Icons/text-bg.webp");
+  background-image: url("./Icons/text-bg.webp");
   background-size: cover;
   background-clip: inherit;
   -webkit-background-clip: text;
