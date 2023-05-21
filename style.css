@@ -418,7 +418,6 @@ header {
   text-align: center;
   font-size: 42px;
   width: 100%;
-  animation: textloads 1s ease-in-out;
 }
 
 .about-descripation {
@@ -635,7 +634,6 @@ header {
   margin-top: 20px;
   font-size: 13px;
   max-width: 400px;
-  animation: textloads 1.4s ease-in-out;
 }
 
 @media screen and (max-width: 769px) {
