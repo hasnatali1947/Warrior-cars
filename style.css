@@ -37,6 +37,10 @@
   display: none;
 }
 
+#X {
+  display: none;
+}
+
 header {
   width: 100%;
   height: 100px;
@@ -150,25 +154,44 @@ header {
   background-color: #ededed00;
 }
 
-.landing-page h3 {
+.landing-page h1 {
   font-size: 35px;
   color: #ec5242;
-}
-
-.landing-page h1 {
-  font-size: 50px;
-  font-weight: 900;
-  color: #ec5242;
+  background-image: url("./Icons/text-bg.webp");
+  background-size: cover;
+  background-clip: inherit;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  width: -moz-fit-content;
+  width: fit-content;
+  animation: textloads 1s ease-in-out;
 }
 
 .landing-page h2 {
+  background-image: url("./Icons/text-bg.webp");
+  background-size: cover;
+  background-clip: inherit;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  width: -moz-fit-content;
+  width: fit-content;
+  font-size: 50px;
+  font-weight: 900;
+  color: #ec5242;
+  animation: textloads 1.2s ease-in-out;
+}
+
+.landing-page h3 {
   font-size: 35px;
   margin-top: 20px;
+  opacity: 0.9;
+  animation: textloads 1.6s ease-in-out;
 }
 
 .landing-page h4 {
   font-size: 20px;
   margin-top: 20px;
+  animation: textloads 1.8s ease-in-out;
 }
 
 .main-program {
@@ -263,6 +286,10 @@ header {
   align-items: center;
   flex-direction: column;
   width: 100%;
+}
+
+.MoreSpeakers {
+  display: grid;
 }
 
 .Speakers {
@@ -401,6 +428,7 @@ header {
   background-color: rgba(255, 255, 255, 0.936);
   margin-bottom: 4vh;
   width: 53%;
+  animation: textloads 1.2s ease-in-out;
 }
 
 .detail {
@@ -414,6 +442,7 @@ header {
   text-align: center;
   width: 100%;
   margin-top: 15px;
+  animation: textloads 1.4s ease-in-out;
 }
 
 .bottom a {
@@ -673,6 +702,7 @@ header {
     row-gap: 55px;
     list-style: none;
     z-index: 500;
+    animation: textloads 1s ease-in-out;
   }
 
   .headerSecondary img {
@@ -1120,5 +1150,17 @@ header {
     font-size: 16px;
     width: 100%;
     max-width: 450px;
+  }
+}
+
+@keyframes textloads {
+  0% {
+    transform: translateY(30px);
+    opacity: 0;
+  }
+
+  100% {
+    transform: translateY(0);
+    opacity: 1;
   }
 }

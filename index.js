@@ -3,12 +3,12 @@
 /* eslint-disable prefer-destructuring */
 
 const Speakers = document.getElementById('Speakers');
+const MoreSpeakers = document.getElementById('MoreSpeakers');
 const otherSpeaker = document.getElementById('otherSpeakers');
 const about = document.getElementById('about-item');
 const desktop = document.getElementById('desktop-main');
 const AboutMain = document.getElementById('AboutMain');
 const MoreLessBtn = document.getElementById('ArrowDownButton');
-const MoreSpeakers = document.getElementById('MoreSpeakers');
 const mobileMenu = document.getElementById('mobileMenu');
 const PopupMobileMenu = document.getElementById('PopupMobileMenu');
 const aboutitemMob = document.getElementById('about-item-mob');
@@ -33,19 +33,19 @@ const mustSpeaker = [{
 
 const otherSpeakers = [
   {
-    image: './Icons/TariqMasood.JPG',
-    name: 'Musti Tariq Masood',
+    image: './Icons/TariqMasood.jpg',
+    name: 'Mufti Tariq Masood',
     role: 'Speaker',
     description: 'A speaker presenting some stuff',
   },
   {
-    image: './Icons/raja.JPG',
-    name: 'Musti Tariq Masood',
+    image: './Icons/raja.jpg',
+    name: 'Mufti Raja',
     role: 'Speaker',
     description: 'A speaker presenting some stuff',
   },
   {
-    image: './Icons/khalid-bin-waleed.PNG',
+    image: './Icons/khalid-bin-waleed.png',
     name: 'Khalid Bin Waleed(RA)',
     role: 'Speaker',
     description: 'A speaker presenting some stuff',
@@ -145,10 +145,20 @@ aboutitemMob.addEventListener('click', ((e) => {
   }
 }));
 
+window.addEventListener('resize', ((e) => {
+  if (e.target.screen.availWidth > 768) {
+    Speakers.style.display = 'grid';
+    MoreSpeakers.style.display = 'grid';
+  } else {
+    Speakers.style.display = 'block';
+    MoreSpeakers.style.display = 'none';
+  }
+}));
+
 MoreLessBtn.addEventListener('click', ((e) => {
   if (MoreSpeakers.style.display === 'none') {
-    MoreSpeakers.style.display = 'block';
     Speakers.style.display = 'block';
+    MoreSpeakers.style.display = 'block';
     e.target.childNodes[0].data = 'Less';
     e.target.children[0].classList.add('rotateArrow');
   } else {
