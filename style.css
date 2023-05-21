@@ -345,12 +345,16 @@ header {
   margin-left: -17.5vh;
 }
 
-.Partners div {
-  padding: 55px;
-  column-gap: 400px;
+.partnerImgs {
+  width: 100%;
+  display: flex;
+  list-style: none;
+  justify-content: center;
+  align-items: center;
+  height: 35vh;
 }
 
-.Partners img {
+.partnerImg {
   height: 45px;
 }
 
@@ -385,7 +389,7 @@ header {
   height: 30px;
 }
 
-.footerDescripation {
+.footerDescription {
   width: 46%;
   margin-left: 4%;
 }
@@ -396,7 +400,7 @@ header {
   width: 100%;
 }
 
-.footer-descripation-disktop {
+.footer-Description-disktop {
   font-size: 13px;
   width: 100%;
   margin-top: 10px;
@@ -420,7 +424,7 @@ header {
   width: 100%;
 }
 
-.about-descripation {
+.about-Description {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -588,7 +592,7 @@ header {
   cursor: pointer;
 }
 
-.footerAbout {
+#footerAbout {
   display: none;
   justify-content: center;
   align-items: center;
@@ -600,7 +604,7 @@ header {
   background-color: rgb(45, 45, 45);
 }
 
-.About-mitMain {
+.about-mitMain {
   display: flex;
   align-items: center;
   -moz-column-gap: 2px;
@@ -609,7 +613,7 @@ header {
   font-family: "Fredoka One", cursive;
 }
 
-.About-mitMain div span {
+.about-mitMain div span {
   display: flex;
   flex-direction: column;
   font-size: 14px;
@@ -617,7 +621,7 @@ header {
   margin-left: 4px;
 }
 
-.About-mitMain img {
+.about-mitMain img {
   width: 30px;
   height: 30px;
 }
@@ -676,7 +680,7 @@ header {
   }
 
   #mobileMenu {
-    display: flex;
+    display: block;
   }
 
   #PopupMobileMenu {
@@ -697,6 +701,7 @@ header {
   }
 
   #PopupMobileMenu ul li {
+    display: none;
     display: flex;
     margin: 5vh;
     row-gap: 55px;
@@ -872,13 +877,13 @@ header {
     height: 15vh;
   }
 
-  .footerDescripation span {
+  .footerDescription span {
     font-size: 16px;
     font-weight: 700;
     color: #5d5d5d;
   }
 
-  .footerDescripation p {
+  .footerDescription p {
     display: none;
   }
 
@@ -1095,17 +1100,17 @@ header {
     row-gap: 40px;
   }
 
-  .footerAbout {
+  #footerAbout {
     background-color: white;
     padding: 40px 0;
   }
 
-  .About-mitMain div span {
+  .about-mitMain div span {
     font-size: 20px;
     color: rgba(0, 0, 0, 0.885);
   }
 
-  .About-mitMain img {
+  .about-mitMain img {
     height: 37px;
     width: 37px;
   }
@@ -1116,7 +1121,7 @@ header {
     height: max-content;
   }
 
-  .about-descripation {
+  .about-Description {
     display: flex;
     justify-content: center;
     align-items: center;
